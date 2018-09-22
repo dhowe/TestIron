@@ -1,0 +1,12 @@
+/Users/dhowe/Projects/TestIron/IronMeta.App/bin/Debug/net462/IronMeta.App.exe
+/Users/dhowe/Projects/TestIron/IronMeta.App/bin/Debug/net462/IronMeta.App.pdb
+/Users/dhowe/Projects/TestIron/IronMeta.App/bin/Debug/net462/Verophyle.Regexp.dll
+/Users/dhowe/Projects/TestIron/IronMeta.App/bin/Debug/net462/IronMeta.Library.dll
+/Users/dhowe/Projects/TestIron/IronMeta.App/bin/Debug/net462/IronMeta.Library.pdb
+/Users/dhowe/Projects/TestIron/IronMeta.App/obj/Debug/net462/IronMeta.App.csprojAssemblyReference.cache
+/Users/dhowe/Projects/TestIron/IronMeta.App/obj/Debug/net462/IronMeta.App.csproj.CoreCompileInputs.cache
+/Users/dhowe/Projects/TestIron/IronMeta.App/obj/Debug/net462/IronMeta.App.AssemblyInfoInputs.cache
+/Users/dhowe/Projects/TestIron/IronMeta.App/obj/Debug/net462/IronMeta.App.AssemblyInfo.cs
+/Users/dhowe/Projects/TestIron/IronMeta.App/obj/Debug/net462/IronMeta.App.csproj.CopyComplete
+/Users/dhowe/Projects/TestIron/IronMeta.App/obj/Debug/net462/IronMeta.App.exe
+/Users/dhowe/Projects/TestIron/IronMeta.App/obj/Debug/net462/IronMeta.App.pdb

@@ -1,0 +1,59 @@
+﻿<Properties StartupConfiguration="{0E7B42E7-C428-4D79-8E04-1D4B9BA9B9CC}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="IronMeta.Tests/ParserTests.cs">
+    <Files>
+      <File FileName="IronMeta.App/Program.cs" Line="27" Column="65" />
+      <File FileName="IronMeta.App/Options.cs" Line="10" Column="12" />
+      <File FileName="IronMeta.App/DialogicParser.ironmeta" Line="10" Column="40" />
+      <File FileName="IronMeta.Tests/ParserTests.cs" Line="69" Column="67" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="TestIron" expanded="True">
+            <Node name="IronMeta.App" expanded="True">
+              <Node name="Dependencies" expanded="True">
+                <Node name="ProjectDependencies" expanded="True" />
+              </Node>
+            </Node>
+            <Node name="IronMeta.Library" expanded="True">
+              <Node name="Matcher" expanded="True" />
+            </Node>
+            <Node name="IronMeta.Tests" expanded="True">
+              <Node name="References" expanded="True">
+                <Node name="From Packages" expanded="True" />
+              </Node>
+              <Node name="Packages" expanded="True" />
+              <Node name="ParserTests.cs" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.UnitTesting.TestPad">
+        <State name="__root__">
+          <Node name="TestIron" expanded="True">
+            <Node name="IronMeta.Tests" expanded="True">
+              <Node name="IronMeta" expanded="True">
+                <Node name="Tests" expanded="True">
+                  <Node name="ParserTests" expanded="True">
+                    <Node name="Test1" selected="True" />
+                  </Node>
+                </Node>
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.IronMeta.App PreferredExecutionTarget="MonoDevelop.Default" />
+  <MultiItemStartupConfigurations />
+  <DisabledProjects>
+    <String>Samples/Calc/Calc.csproj</String>
+    <String>IronMeta.Tests/IronMeta.Tests.csproj</String>
+  </DisabledProjects>
+</Properties>

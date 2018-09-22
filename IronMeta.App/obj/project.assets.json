@@ -1,0 +1,97 @@
+{
+  "version": 3,
+  "targets": {
+    ".NETFramework,Version=v4.6.2": {
+      "Verophyle.Regexp/2.2.1": {
+        "type": "package",
+        "compile": {
+          "lib/net462/Verophyle.Regexp.dll": {}
+        },
+        "runtime": {
+          "lib/net462/Verophyle.Regexp.dll": {}
+        }
+      },
+      "IronMeta.Library/4.4.0": {
+        "type": "project",
+        "framework": ".NETFramework,Version=v4.6.2",
+        "dependencies": {
+          "Verophyle.Regexp": "2.2.1"
+        },
+        "compile": {
+          "bin/placeholder/IronMeta.Library.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/IronMeta.Library.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Verophyle.Regexp/2.2.1": {
+      "sha512": "l1uvUkVbsFWr54CYbrV4ADNoVj0/G22pUG1QpXyRQDH0pdAEHFQQPBwLvYnj6DcceUvDJr+jc7wPjwzd58otTw==",
+      "type": "package",
+      "path": "verophyle.regexp/2.2.1",
+      "files": [
+        "lib/net462/Verophyle.Regexp.dll",
+        "lib/net471/Verophyle.Regexp.dll",
+        "lib/netstandard2.0/Verophyle.Regexp.dll",
+        "verophyle.regexp.2.2.1.nupkg.sha512",
+        "verophyle.regexp.nuspec"
+      ]
+    },
+    "IronMeta.Library/4.4.0": {
+      "type": "project",
+      "path": "../IronMeta.Library/IronMeta.Library.csproj",
+      "msbuildProject": "../IronMeta.Library/IronMeta.Library.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    ".NETFramework,Version=v4.6.2": [
+      "IronMeta.Library >= 4.4.0"
+    ]
+  },
+  "packageFolders": {
+    "/Users/dhowe/.nuget/packages/": {},
+    "/usr/local/share/dotnet/sdk/NuGetFallbackFolder": {}
+  },
+  "project": {
+    "version": "4.4.0",
+    "restore": {
+      "projectUniqueName": "/Users/dhowe/Projects/TestIron/IronMeta.App/IronMeta.App.csproj",
+      "projectName": "IronMeta.App",
+      "projectPath": "/Users/dhowe/Projects/TestIron/IronMeta.App/IronMeta.App.csproj",
+      "packagesPath": "/Users/dhowe/.nuget/packages/",
+      "outputPath": "/Users/dhowe/Projects/TestIron/IronMeta.App/obj",
+      "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
+      ],
+      "configFilePaths": [
+        "/Users/dhowe/.config/NuGet/NuGet.Config"
+      ],
+      "originalTargetFrameworks": [
+        "net462"
+      ],
+      "sources": {
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net462": {
+          "projectReferences": {
+            "/Users/dhowe/Projects/TestIron/IronMeta.Library/IronMeta.Library.csproj": {
+              "projectPath": "/Users/dhowe/Projects/TestIron/IronMeta.Library/IronMeta.Library.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "net462": {}
+    }
+  }
+}

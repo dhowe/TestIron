@@ -1,0 +1,27 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>net462;net471;netstandard2.0</TargetFrameworks>
+    <RootNamespace>IronMeta</RootNamespace>
+    <SignAssembly>true</SignAssembly>
+    <AssemblyOriginatorKeyFile>IronMeta.snk</AssemblyOriginatorKeyFile>
+    <PackageId>IronMeta</PackageId>
+    <Version>4.4.0</Version>
+    <Authors>Gordon Tisher</Authors>
+    <Company>Gordon Tisher</Company>
+    <Product>IronMeta</Product>
+    <Description>The IronMeta parser generator provides a programming language and application for generating pattern matchers on arbitrary streams of objects. It is an implementation of Alessandro Warth's OMeta system for C#.</Description>
+    <Copyright>IronMeta Copyright © Gordon Tisher 2016</Copyright>
+    <PackageLicenseUrl>https://github.com/kulibali/ironmeta/blob/master/License.txt</PackageLicenseUrl>
+    <PackageProjectUrl>https://github.com/kulibali/ironmeta</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/kulibali/ironmeta</RepositoryUrl>
+    <PackageTags>PEG parser parsergenerator</PackageTags>
+    <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+    <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Verophyle.Regexp" Version="2.2.1" />
+  </ItemGroup>
+
+</Project>

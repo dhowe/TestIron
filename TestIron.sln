@@ -1,0 +1,29 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IronMeta.Library", "IronMeta.Library\IronMeta.Library.csproj", "{FA3A028C-753F-4583-A31D-BA206D544774}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IronMeta.App", "IronMeta.App\IronMeta.App.csproj", "{0E7B42E7-C428-4D79-8E04-1D4B9BA9B9CC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IronMeta.Tests", "IronMeta.Tests\IronMeta.Tests.csproj", "{F687D76E-0DDF-4CE3-9B71-6B92C65CFE18}"
+EndProject
+Global
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FA3A028C-753F-4583-A31D-BA206D544774}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{FA3A028C-753F-4583-A31D-BA206D544774}.Debug|x86.Build.0 = Debug|Any CPU
+		{FA3A028C-753F-4583-A31D-BA206D544774}.Release|x86.ActiveCfg = Release|Any CPU
+		{FA3A028C-753F-4583-A31D-BA206D544774}.Release|x86.Build.0 = Release|Any CPU
+		{0E7B42E7-C428-4D79-8E04-1D4B9BA9B9CC}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{0E7B42E7-C428-4D79-8E04-1D4B9BA9B9CC}.Debug|x86.Build.0 = Debug|Any CPU
+		{0E7B42E7-C428-4D79-8E04-1D4B9BA9B9CC}.Release|x86.ActiveCfg = Release|Any CPU
+		{0E7B42E7-C428-4D79-8E04-1D4B9BA9B9CC}.Release|x86.Build.0 = Release|Any CPU
+		{F687D76E-0DDF-4CE3-9B71-6B92C65CFE18}.Debug|x86.ActiveCfg = Debug|x86
+		{F687D76E-0DDF-4CE3-9B71-6B92C65CFE18}.Debug|x86.Build.0 = Debug|x86
+		{F687D76E-0DDF-4CE3-9B71-6B92C65CFE18}.Release|x86.ActiveCfg = Release|x86
+		{F687D76E-0DDF-4CE3-9B71-6B92C65CFE18}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+EndGlobal
