@@ -54,8 +54,7 @@ namespace IronMeta.Tests
                 }
                 else
                 {
-                    int num, offset;
-                    var line = match.MatchState.GetLine(match.MatchState.LastErrorIndex, out num, out offset);
+                    var line = match.MatchState.GetLine(match.MatchState.LastErrorIndex, out int num, out int offset);
                     Console.Error.WriteLine("{0}({1},{2}): error: {3}", inputInfo.FullName, num, offset, match.MatchState.LastError);
                     Console.Error.WriteLine("{0}", line);
                     Console.Error.WriteLine("{0}^", new string(' ', offset));
