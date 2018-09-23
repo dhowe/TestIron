@@ -7,3 +7,4 @@
 /Users/dhowe/Projects/TestIron/IronMeta.Library/obj/Debug/net462/IronMeta.Library.csproj.CopyComplete
 /Users/dhowe/Projects/TestIron/IronMeta.Library/obj/Debug/net462/IronMeta.Library.dll
 /Users/dhowe/Projects/TestIron/IronMeta.Library/obj/Debug/net462/IronMeta.Library.pdb
+/Users/dhowe/Projects/TestIron/IronMeta.Library/obj/Debug/net462/IronMeta.Library.csprojAssemblyReference.cache

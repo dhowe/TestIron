@@ -27,13 +27,13 @@ namespace IronMeta
                 var inputInfo = new FileInfo(options.InputFile);
                 var outputInfo = new FileInfo(options.OutputFile);
 
-                if (outputInfo.Exists && outputInfo.LastWriteTimeUtc > inputInfo.LastWriteTimeUtc && !options.Force)
-                {
-                    Console.WriteLine(string.Format(message, options.Namespace, outputInfo.FullName, inputInfo.FullName, "input is older than output; not generating"));
-                    return 1;
-                }
-                else
-                {
+                //if (outputInfo.Exists && outputInfo.LastWriteTimeUtc > inputInfo.LastWriteTimeUtc && !options.Force)
+                //{
+                //    Console.WriteLine(string.Format(message, options.Namespace, outputInfo.FullName, inputInfo.FullName, "input is older than output; not generating"));
+                //    return 1;
+                //}
+                //else
+                //{
                     var stopwatch = new Stopwatch();
                     stopwatch.Start();
                     var match = CSharpShell.Process(inputInfo.FullName, outputInfo.FullName, options.Namespace, true);
@@ -53,7 +53,7 @@ namespace IronMeta
                         Console.Error.WriteLine("{0}^", new string(' ', offset));
                         return 1;
                     }
-                }
+                //}
             }
             catch (Exception e)
             {

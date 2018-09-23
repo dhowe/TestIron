@@ -2,6 +2,8 @@
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup Condition=" '$(RunConfiguration)' == 'Default' ">
     <StartAction>Project</StartAction>
+    <StartArguments>-n IronMeta.Tests -o /Users/dhowe/Projects/TestIron/IronMeta.Tests/PegParser.g.cs /Users/dhowe/Projects/TestIron/IronMeta.App/PegParser.ironmeta</StartArguments>
+    <StartWorkingDirectory>..\IronMeta.Tests</StartWorkingDirectory>
     <ExternalConsole>false</ExternalConsole>
   </PropertyGroup>
 </Project>

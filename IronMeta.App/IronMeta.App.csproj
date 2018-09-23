@@ -15,4 +15,8 @@
     <ProjectReference Include="..\IronMeta.Library\IronMeta.Library.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Compile Remove="DialogicParser.g.cs" />
+    <Compile Remove="PegParser.g.cs" />
+  </ItemGroup>
 </Project>
