@@ -1,5 +1,5 @@
 //
-// IronMeta PegParser Parser; Generated 2018-09-23 11:11:53Z UTC
+// IronMeta PegParser Parser; Generated 2018-09-23 11:17:16Z UTC
 //
 
 using System;
@@ -54,88 +54,96 @@ namespace IronMeta.Tests
             int _arg_index = 0;
             int _arg_input_index = 0;
 
-            // AND 0
-            int _start_i0 = _index;
+            // AND 1
+            int _start_i1 = _index;
 
             // CALLORVAR Command
-            _PegParser_Item _r1;
+            _PegParser_Item _r2;
 
-            _r1 = _MemoCall(_memo, "Command", _index, Command, null);
+            _r2 = _MemoCall(_memo, "Command", _index, Command, null);
 
-            if (_r1 != null) _index = _r1.NextIndex;
+            if (_r2 != null) _index = _r2.NextIndex;
 
             // AND shortcut
-            if (_memo.Results.Peek() == null) { _memo.Results.Push(null); goto label0; }
+            if (_memo.Results.Peek() == null) { _memo.Results.Push(null); goto label1; }
 
-            // AND 3
-            int _start_i3 = _index;
-
-            // PLUS 4
+            // AND 4
             int _start_i4 = _index;
-            var _res4 = Enumerable.Empty<string>();
-        label4:
+
+            // PLUS 5
+            int _start_i5 = _index;
+            var _res5 = Enumerable.Empty<string>();
+        label5:
 
             // CALLORVAR WS
-            _PegParser_Item _r5;
+            _PegParser_Item _r6;
 
-            _r5 = _MemoCall(_memo, "WS", _index, WS, null);
+            _r6 = _MemoCall(_memo, "WS", _index, WS, null);
 
-            if (_r5 != null) _index = _r5.NextIndex;
+            if (_r6 != null) _index = _r6.NextIndex;
 
-            // PLUS 4
-            var _r4 = _memo.Results.Pop();
-            if (_r4 != null)
+            // PLUS 5
+            var _r5 = _memo.Results.Pop();
+            if (_r5 != null)
             {
-                _res4 = _res4.Concat(_r4.Results);
-                goto label4;
+                _res5 = _res5.Concat(_r5.Results);
+                goto label5;
             }
             else
             {
-                if (_index > _start_i4)
-                    _memo.Results.Push(new _PegParser_Item(_start_i4, _index, _memo.InputEnumerable, _res4.Where(_NON_NULL), true));
+                if (_index > _start_i5)
+                    _memo.Results.Push(new _PegParser_Item(_start_i5, _index, _memo.InputEnumerable, _res5.Where(_NON_NULL), true));
                 else
                     _memo.Results.Push(null);
             }
 
             // AND shortcut
-            if (_memo.Results.Peek() == null) { _memo.Results.Push(null); goto label3; }
+            if (_memo.Results.Peek() == null) { _memo.Results.Push(null); goto label4; }
 
             // CALLORVAR TEXT
-            _PegParser_Item _r6;
+            _PegParser_Item _r7;
 
-            _r6 = _MemoCall(_memo, "TEXT", _index, TEXT, null);
+            _r7 = _MemoCall(_memo, "TEXT", _index, TEXT, null);
 
-            if (_r6 != null) _index = _r6.NextIndex;
+            if (_r7 != null) _index = _r7.NextIndex;
 
-        label3: // AND
-            var _r3_2 = _memo.Results.Pop();
-            var _r3_1 = _memo.Results.Pop();
+        label4: // AND
+            var _r4_2 = _memo.Results.Pop();
+            var _r4_1 = _memo.Results.Pop();
 
-            if (_r3_1 != null && _r3_2 != null)
+            if (_r4_1 != null && _r4_2 != null)
             {
-                _memo.Results.Push( new _PegParser_Item(_start_i3, _index, _memo.InputEnumerable, _r3_1.Results.Concat(_r3_2.Results).Where(_NON_NULL), true) );
+                _memo.Results.Push( new _PegParser_Item(_start_i4, _index, _memo.InputEnumerable, _r4_1.Results.Concat(_r4_2.Results).Where(_NON_NULL), true) );
             }
             else
             {
                 _memo.Results.Push(null);
-                _index = _start_i3;
+                _index = _start_i4;
             }
 
             // QUES
             if (_memo.Results.Peek() == null) { _memo.Results.Pop(); _memo.Results.Push(new _PegParser_Item(_index, _memo.InputEnumerable)); }
 
-        label0: // AND
-            var _r0_2 = _memo.Results.Pop();
-            var _r0_1 = _memo.Results.Pop();
+        label1: // AND
+            var _r1_2 = _memo.Results.Pop();
+            var _r1_1 = _memo.Results.Pop();
 
-            if (_r0_1 != null && _r0_2 != null)
+            if (_r1_1 != null && _r1_2 != null)
             {
-                _memo.Results.Push( new _PegParser_Item(_start_i0, _index, _memo.InputEnumerable, _r0_1.Results.Concat(_r0_2.Results).Where(_NON_NULL), true) );
+                _memo.Results.Push( new _PegParser_Item(_start_i1, _index, _memo.InputEnumerable, _r1_1.Results.Concat(_r1_2.Results).Where(_NON_NULL), true) );
             }
             else
             {
                 _memo.Results.Push(null);
-                _index = _start_i0;
+                _index = _start_i1;
+            }
+
+            // ACT
+            var _r0 = _memo.Results.Peek();
+            if (_r0 != null)
+            {
+                _memo.Results.Pop();
+                _memo.Results.Push( new _PegParser_Item(_r0.StartIndex, _r0.NextIndex, _memo.InputEnumerable, _Thunk(_IM_Result => { return new string(_IM_Result.Inputs.ToArray()); }, _r0), true) );
             }
 
         }
@@ -147,28 +155,20 @@ namespace IronMeta.Tests
             int _arg_index = 0;
             int _arg_input_index = 0;
 
-            // OR 1
-            int _start_i1 = _index;
+            // OR 0
+            int _start_i0 = _index;
 
             // LITERAL "SAY"
             _ParseLiteralString(_memo, ref _index, "SAY");
 
             // OR shortcut
-            if (_memo.Results.Peek() == null) { _memo.Results.Pop(); _index = _start_i1; } else goto label1;
+            if (_memo.Results.Peek() == null) { _memo.Results.Pop(); _index = _start_i0; } else goto label0;
 
             // LITERAL "ASK"
             _ParseLiteralString(_memo, ref _index, "ASK");
 
-        label1: // OR
-            int _dummy_i1 = _index; // no-op for label
-
-            // ACT
-            var _r0 = _memo.Results.Peek();
-            if (_r0 != null)
-            {
-                _memo.Results.Pop();
-                _memo.Results.Push( new _PegParser_Item(_r0.StartIndex, _r0.NextIndex, _memo.InputEnumerable, _Thunk(_IM_Result => { return new string(_IM_Result.Inputs.ToArray()); }, _r0), true) );
-            }
+        label0: // OR
+            int _dummy_i0 = _index; // no-op for label
 
         }
 
@@ -181,14 +181,6 @@ namespace IronMeta.Tests
 
             // REGEXP [^{}]+
             _ParseRegexp(_memo, ref _index, _re0);
-
-            // ACT
-            var _r0 = _memo.Results.Peek();
-            if (_r0 != null)
-            {
-                _memo.Results.Pop();
-                _memo.Results.Push( new _PegParser_Item(_r0.StartIndex, _r0.NextIndex, _memo.InputEnumerable, _Thunk(_IM_Result => { return new string(_IM_Result.Inputs.ToArray()); }, _r0), true) );
-            }
 
         }
 
